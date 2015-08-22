@@ -1,39 +1,47 @@
-function openClose(div)
+var buttonGeneral = document.getElementById('button-general');
+var buttonHTML = document.getElementById('button-html');
+var buttonCSS = document.getElementById('button-css');
+var buttonJS = document.getElementById('button-js');
+
+function openClose(div, icon)
 {
   if (div.style.display !== 'none')
   {
      div.style.display = 'none';
+     document.getElementById(icon).className = "fa fa-plus-square-o";
   }
   else
   {
      div.style.display = 'block';
+     document.getElementById(icon).className = "fa fa-minus-square-o";
+     
   }
 }
 
-var buttonGeneral = document.getElementById('button-general');
 buttonGeneral.onclick = function()
 {
   var divGeneral = document.getElementById('open-close-general');
-  openClose(divGeneral);
-};
+  var iconGeneral = 'toc-icon-general';
+  openClose(divGeneral, iconGeneral);
+}
 
-var buttonHTML = document.getElementById('button-html');
 buttonHTML.onclick = function()
 {
   var divHTML = document.getElementById('open-close-html');
-  openClose(divHTML);
-};
+  var iconHTML = 'toc-icon-html';
+  openClose(divHTML, iconHTML);
+}
 
-var buttonCSS = document.getElementById('button-css');
 buttonCSS.onclick = function()
 {
   var divCSS = document.getElementById('open-close-css');
-  openClose(divCSS);
-};
+  var iconCSS= 'toc-icon-css';
+  openClose(divCSS, iconCSS);
+}
 
-var buttonJS = document.getElementById('button-js');
 buttonJS.onclick = function()
 {
   var divJS = document.getElementById('open-close-js');
-  openClose(divJS);
-};
+  var iconJS = 'toc-icon-js';
+  openClose(divJS, iconJS);
+}
