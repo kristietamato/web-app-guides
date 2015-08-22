@@ -50,7 +50,7 @@ body
  {
     padding: 30px;
     position: fixed;
-    width: 30%;
+    width: 26%;
     margin-right: 20px;
     overflow-y: scroll;
     top: 0;
@@ -60,23 +60,23 @@ body
 
    .info /* edit all the right content */
   {
-    position: relative;
     padding: 10px 0 20px 20px;
-    width: 70%;
-    margin-left: 50px;
+    width: 60%;
+    margin: auto;
   }
 
 
 .table-of-contents-main /* set the size of the left menu */
 {
   order: 1;
-  width: 32%;
+  width: 28%;
 }
 
 .guide
 {
   order: 2;
-  width: 68%;
+  width: 70%;
+  position: relative;
 }
 
 footer
@@ -84,6 +84,7 @@ footer
   position: fixed;
   bottom: 0px;
   right: 30px;
+  z-index: 20;
 }
 
 h1
@@ -174,7 +175,7 @@ table
   border-collapse: 
   collapse;
   border-spacing: 0; 
-  font font-size: 12px;
+  font-size: 12px;
   text-align: center;
 }
 
