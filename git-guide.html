@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>git Guide | Tamato</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <link href="css/code-style-guide.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<body>
+  <main>
+    <section class="content">
+      <section class="table-of-contents-main">
+        <section class="table-of-contents">
+          <h1 id="main-heading"><a href="http://www.tamato.org/"><i class="fa fa-home"></a></i> <i class="fa fa-angle-right"></i> git Guide</h1>
+          <h2>Table of Contents</h2>
+          <h4><a href="#note"><i class="fa fa-sticky-note-o"></i> Note</a></h4>
+          <h4 id="button-general"><a href="#general-1.0"><i id="toc-icon-general" class="fa fa-plus-square-o"></i> 1.0 General</a></h4>
+          <div id="open-close-general" style="display:none">
+            <ul>
+              <li><a href="#general-1.1">1.1 File Names</a></li>
+              <ul>
+                <li><a href="#general-1.1.1">1.1.1 Dates</a></li>
+                <li><a href="#general-1.1.2">1.1.2 Phone Numbers</a></li>
+              </ul>
+              <li><a href="#general-1.2">1.2 Links</a></li>
+              <li><a href="#general-1.3">1.3 Indentation</a></li>
+              <li><a href="#general-1.4">1.4 Be Consistent</a></li>
+              <li><a href="#general-1.5">1.5 Comments</a></li>
+              <li><a href="#general-1.6">1.6 Using git</a></li>
+              <li><a href="#general-1.7">1.7 Search Engine Optimization (SEO)</a></li>
+              <li><a href="#general-1.8">1.8 Project Organization</a></li>
+            </ul>
+          </div>
+          <h4 id="button-html"><a href="#html-2.0"><i id="toc-icon-html" class="fa fa-plus-square-o"></i> 2.0 HTML5</a></h4>
+          <div id="open-close-html" style="display:none">
+            <ul>
+              <li><a href="#html-2.1">2.1 The <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, and <code>&lt;body&gt;</code> elements</a></li>
+              <li><a href="#html-2.2">2.2 Doctype and Meta Tags</a></li>
+              <li><a href="#html-2.3">2.3 HTML Formatting</a></li>
+                <ul>
+                  <li><a href="#html-2.3.1">2.3.1 Quotes</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#html-2.3.2">2.3.2 XHTML</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#html-2.3.3">2.3.3 Trailing Whitespace</a></li>
+                </ul>
+              <li><a href="#html-2.4">2.4 Include Files</a></li>
+              <li><a href="#html-2.5">2.5 Naming HTML Classes and IDs</a></li>
+            </ul>
+          </div>
+          <h4 id="button-css"><a href="#css-3.0"><i id="toc-icon-css" class="fa fa-plus-square-o"></i> 3.0 CSS3</a></h4>
+          <div id="open-close-css" style="display:none">
+            <ul>
+              <li><a href="#css-3.1">3.1 Shorthand Coding</a></li>
+              <li><a href="#css-3.2">3.2 Units</a></li>
+              <li><a href="#css-3.3">3.3 Naming CSS Classes and IDs</a></li>
+              <li><a href="#css-3.4">3.4 Order</a></li>
+              <li><a href="#css-3.5">3.5 url Values</a></li>
+              <li><a href="#css-3.6">3.6 Block Content Indentation</a></li>
+              <li><a href="#css-3.7">3.7 Spacing</a></li>
+              <li><a href="#css-3.8">3.8 Selector, Declaration, and Rule Separation</a></li>
+            </ul>
+          </div>
+          <h4 id="button-js"><a href="#js-4.0"><i id="toc-icon-js" class="fa fa-plus-square-o"></i> 4.0 JavaScript</a></h4>
+          <div id="open-close-js" style="display:none">
+            <ul>
+              <li><a href="#js-4.1">4.1 String Quotes</a></li>
+              <li><a href="#js-4.2">4.2 Naming in JavaScript</a></li>
+              <li><a href="#js-4.3">4.3 Variable Declarations</a></li>
+              <li><a href="#js-4.4">4.4 Function Declarations</a></li>
+              <li><a href="#js-4.5">4.5 Statements</a></li>
+                <ul>
+                  <li><a href="#js-4.5.1">4.5.1 For Statements</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#js-4.5.2">4.5.2 While Statements</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#js-4.5.3">4.5.3 Do Statements</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#js-4.5.4">4.5.4 Switch Statements</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#js-4.5.5">4.5.5 Try Statements</a></li>
+                </ul>
+            </ul>
+          </div>
+        </section>
+      </section><!-- end table of contents -->
+
+      <section class="guide" id="note">
+        <section class = "info">
+          <h2><i class="fa fa-sticky-note-o"></i> Note</h2>
+          <p>
+            Special icons can be seen throughout the guide.
+          </p>
+          <table>
+            <tr>
+                <th>Icon</th>
+                <th>Meaning</th>
+            </tr>
+            <tr>
+                <td><i class="fa fa-user" alt="User Preference Icon"></i></td>
+                <td>up to your preference</td>
+            </tr>
+            <tr>
+                <td><i class="fa fa-exclamation" alt="Important Icon"></i></td>
+                <td>important</td>
+            </tr>
+            <tr>
+                <td><i class="fa fa-thumbs-o-up" alt="Thumbs Up Icon"></i></td>
+                <td>approved of</td>
+            </tr>
+            <tr>
+                <td><i class="fa fa-thumbs-o-down" alt="Thumbs Down Icon"></i></td>
+                <td>disapproved of</td>
+            </tr>
+          </table>
+
+          <h3 id="general-1.0">1.0 General</h3>
+          <p>
+            The purpose of this code style guide is to keep code style as consistent and readable as possible.
+          </p>
+          <p>
+            This guide was created based on Google Styling, and <a href="https://github.com/forio/front-end-code-standards#31-the-html-head-and-body-elements">Forio Front End</a> guides.
+          </p>
+          <h4 id="general-1.1">1.1 File Names</h4>
+          <p>
+            File names should be specific and descriptive. 
+            Use only lowercase letters. 
+            Words or acronyms are separated by a hyphen - . 
+            The legal characters are a-z, numbers, and - for separation.
+            For example: image-name-2014-07-07.jpg
+          </p>
+          <p>
+            Please do not use spaces or any of these special characters:
+          </p>
+          <pre>
+              \ / : * ? “ < > | [ ] & $
+          </pre>
+          <h4 id="general-1.1.1">1.1.1 Dates</h4>
+          <p>
+            <i class="fa fa-thumbs-o-up" alt="Thumbs Up Icon"></i> Dates should be formatted as follows: file-name-year-month-day.extension
+          </p>
+          <h4 id="general-1.1.2">1.1.2 Phone Numbers</h4>
+          <p>
+            <i class="fa fa-thumbs-o-up" alt="Thumbs Up Icon"></i> Phone numbers should be formatted in the following:<br />
+            (714) 111-5555
+          </p>
+
+          <h4 id="general-1.2">1.2 Links</h4>
+          <p>
+            Provide a link to a description. Do not use the link itself to replace the description. <br />
+            <i class="fa fa-thumbs-o-up" alt="Thumbs Up Icon"></i> <a href="">Code Style Guide</a><br />
+            <i class="fa fa-thumbs-o-down" alt="Thumbs Down Icon"></i> <a href="">www.tamato.org/guides/code-style-guide.html</a>
+          </p>
+          <h4 id="general-1.3">1.3 Indentation</i></h4>
+          <p>
+            The indentation unit is 2 spaces. The use of tab is not recommended, because there is no standard for tabstops yet.
+          </p>
+          <p>
+            Always indent child elements and content within elements like this:
+            <blockquote>
+              <pre>
+                <code>&lt;blockquote&gt;</code>
+                  <code>&lt;p&gt;</code> 
+                    Lorem ipsum dolor sit amet.
+                  <code>&lt;/p&gt;</code> 
+                <code>&lt;/blockquote&gt;</code>
+              </pre>
+            </blockquote>
+            Exceptions to this rule are <code>&lt;head&gt;</code> and <code>&lt;body&gt;</code> elements, <code>&lt;title&gt;</code>Title<code>&lt;/title&gt;</code>, <code>&lt;h#&gt;</code>header<code>&lt;/h#&gt;</code>, <code>&lt;li&gt;</code>list<code>&lt;/li&gt;</code>, and inline elements.
+          </p>
+          <h4 id="general-1.4">1.4 Be Consistent</h4>
+          <p>
+            <i class="fa fa-exclamation" alt="Important Icon"></i> It is important to be consistent throughout your development. Try your best to follow this guideline. If there is anything not included here, you can look at the coding style of prior works to maintain consistency.
+          </p>
+          <h4 id="general-1.5">1.5 Comments</h4>
+          <p>
+            Use line comments as much as needed. Make comments meaningful and clear. Comments should be up-to-date and error-free.
+          </p>
+          <h4 id="general-1.6">1.6 Using git</h4>
+          <p>
+            Commits are made as often as possible. Commit messages start with the action or purpose of the commit: "Create the method to parse strings" No periods necessary. Be descriptive and informative.
+          </p>
+          <h4 id="general-1.7">1.7 Search Engine Optimization (SEO)</h4>
+          <p>
+            <i class="fa fa-exclamation" alt="Important Icon"></i> SEO is perhaps one of the most important factors in a website. It enables users to get the specific information they need directly without having to browse around.
+          </p>
+          <p>
+            <i class="fa fa-thumbs-o-up" alt="Thumbs Up Icon"></i> Optimizing SEO:
+            <ul>
+              <li>Use only 1 &lt;h1&gt; tag for your heading per page</li>
+              <li>Use &lt;h2&gt; tags for subheadings</li>
+              <li>Use titles and headings that are descriptive (but not lengthy) and relevant to the content</li>
+              <li>Incorporate 3-6 repeated keywords in your content that users would type to find that page</li>
+              <li>Use descriptive (but not lengthy) links. <a href="#general-1.2">How to Format Links</a></li>
+              <li>Use alts in images</li>
+            </ul>
+            For more information on SEO go to <a href="media/2015/documents/search-engine-optimization-starter-guide.pdf">SEO Starter Guide by Google</a>
+          <h4 id="general-1.8">1.8 Project Organization</h4>
+          <p>
+            In progress.
+          </p>
+
+          <h3 id="html-2.0">2.0 HTML</h3>
+          <h4 id="html-2.1">2.1 The <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, and <code>&lt;body&gt;</code> elements</h4>
+          <p>
+            Although it is good to have updated HTML5 formating, we will still include the <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, and <code>&lt;body&gt;</code> elements to ensure proper functioning in IE.
+          </p>
+          <h4 id="html-2.2">2.2 Doctype and Meta Tags</h4>
+          <p>
+            <i class="fa fa-exclamation" alt="Important Icon"></i> Include the <code>&lt;!doctype html&gt;</code>, <code>&lt;html lang="en"&gt;</code>, and <code>&lt;meta charset="utf-8"&gt;</code> in the beginning of every HTML document.
+          </p>
+          <p>
+            <i class="fa fa-exclamation" alt="Important Icon"></i> Also include <code>&lt;meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"&gt;</code>, and <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</code>. The first one allows use of the latest rendering engine for IE8 and IE9 to enable the best possible browser experience. The second meta enables responsiveness to work properly in some types of mobile devices.
+          </p>
+          <h4 id="html-2.3">2.3 HTML Formatting</h4>
+          <p>
+            Use a new line for every block, list, or table element. Indent child elements.  <i class="fa fa-user" alt="User Preference Icon"></i> You may separate different code sections with empty new lines to improve readability.
+          </p>
+          <h4 id="html-2.3.1">2.3.1 Quotes</h4>
+          <p>
+            Use double quotes "" around attribute values, for example:
+            <blockquote>
+              <pre>
+                &lt;a href="url"&gt;url&lt;/a&gt;
+              </pre>
+            </blockquote>
+          </p>
+          <h4 id="html-2.3.2">2.3.2 XHTML</h4>
+          <p> 
+            For proper XHTML, close all tags including br, li, hr tags, etc.
+          </p>
+          <h4 id="html-2.3.3">2.3.3 Trailing Whitespace</h4>
+          <p>
+            <i class="fa fa-user" alt="User Preference Icon"></i> Remove trailing white spaces.
+          </p>
+          <h4 id="html-2.4">2.4 Include files</h4>
+          <p>
+            Use include files for CSS and other non-scripts in the <code>&lt;header&gt;</code> region and place scripts before the <code>&lt;/html&gt;</code>. Try to minimize inline CSS/Javascript in HTML.
+          </p>
+          <p>
+            Organize include files in appropriately labeled folders e.g. "css" for css files and "scripts" for JavaScript and jQuery files.
+          </p>
+          <h4 id="html-2.5">2.5 Naming HTML Classes and IDs</h4>
+          <p>
+            When naming classes and IDs, keep in mind readability of your code. You want your code to be a story that a reader can efficiently read through. This decreases the comments you would have to write. 
+          </p>
+          <p>
+            Name your names accordingly, in a way that reflects the purpose of the element. Names should be as short as possible without sacrificing clarity.
+          </p>
+          <p>
+            HTML names are similar to naming files: id-name, class-name
+          </p>
+          <p>
+            Classes are used for several sections of content whereas IDs are more specific and unique to a content.  <i class="fa fa-exclamation" alt="Important Icon"></i> Classes are used more than once, but an ID should be used only once.
+          </p>
+          
+          <h3 id="css-3.0">3.0 CSS</h3>
+          <h4 id="css-3.1">3.1 Shorthand Coding</h4>
+          <p>
+            Use shorthand coding where possible. For example:
+            <blockquote>
+              <pre>
+                /* Not recommended */
+                border-top-style: none;
+                font-family: palatino, georgia, serif;
+                font-size: 100%;
+                line-height: 1.6;
+                padding-bottom: 2em;
+                padding-left: 1em;
+                padding-right: 1em;
+                padding-top: 0;
+
+                /* Recommended */
+                border-top: 0;
+                font: 100%/1.6 palatino, georgia, serif;
+                padding: 0 1em 2em;
+              </pre>
+            </blockquote>
+          </p>
+          <h4 id="css-3.2">3.2 Units</h4>
+          <p>
+            <i class="fa fa-exclamation" alt="Important Icon"></i> Use "px" for all values if possible. Avoid using units after 0 values unless you have to.
+          </p>
+          <h4 id="css-3.3">3.3 Naming CSS Classes and IDs</h4>
+          <p>
+            Naming in CSS is the same as HTML. They should all be lowercase and separated by a hyphen - .
+          </p>
+          <h4 id="css-3.4">3.4 Order</h4>
+          <p>
+            <i class="fa fa-user" alt="User Preference Icon"></i> Alphabetize declarations so that code is easy to read and maintain:
+            <blockquote>
+              <pre>
+                background: fuchsia;
+                border: 1px solid;
+                -moz-border-radius: 4px;
+                -webkit-border-radius: 4px;
+                border-radius: 4px;
+                color: black;
+                text-align: center;
+                text-indent: 2em;
+              </pre>
+            </blockquote>
+          </p>
+          <h4 id="css-3.5">3.5 url Values</h4>
+          <p>
+            <i class="fa fa-user" alt="User Preference Icon"></i> Do not include quotations in url() elements.
+          </p>
+          <h4 id="css-3.6">3.6 Block Content Indentation</h4>
+          <p>
+            Indent all block content:
+            <blockquote>
+              <pre>
+                @mediascreen, projection
+                {
+                  html
+                  {
+                    background: #fff;
+                    color: #444;
+                  }
+                }
+              </pre>
+            </blockquote>
+          </p>
+          <h4 id="css-3.7">3.7 Spacing</h4>
+          <p>
+            <i class="fa fa-user" alt="User Preference Icon"></i> Use a space after a property name's colon:
+            <blockquote>
+              <pre>
+                /* Not recommended */
+                h3
+                {
+                  font-weight:bold;
+                }
+
+                /* Recommended */
+                h3
+                {
+                  font-weight: bold;
+                }
+              </pre>
+            </blockquote>
+          </p>
+          <h4 id="css-3.8">3.8 Selector, Declaration, and Rule Separation</h4>
+          <p>
+            Start a new line for each selector, declarion, and rule:
+            <blockquote>
+              <pre>
+                /* Not recommended */
+                a:focus, a:active
+                {
+                  position: relative; top: 1px;
+                }
+
+                /* Recommended */
+                h1,
+                h2,
+                h3
+                {
+                  font-weight: normal;
+                  line-height: 1.2;
+                }
+              </pre>
+            </blockquote>
+          </p>
+
+          <h3 id="js-4.0">4.0 JavaScript</h3>
+            <p>
+              Scripts should be externally linked. All scripts are placed at the end just before the &lt;/html&gt; tag.
+            </p>
+          <h4 id="js-4.1">4.1 String Quotes</h4>
+          <p>
+            Use single quotes ' ' instead of double quotes for strings to avoid confusion when including HTML elements.
+          </p>
+          <h4 id="js-4.2">4.2 Naming in JavaScript</h4>
+          <p>
+            <i class="fa fa-exclamation" alt="Important Icon"></i> Use:
+            <ul>
+              <li>functionNamesLikeThis</li>
+              <li>variableNamesLikeThis</li>
+              <li>methodNamesLikeThis</li>
+              <li>ConstructorNamesLikeThis</li>
+              <li>CONSTANTS_LIKE_THIS</li>
+            </ul>
+          </p>
+          <p>
+            Do not use const for constants.
+          </P>
+          <h4 id="js-4.3">4.3 Variable Declarations</h4>
+          <p>
+            Generally, variables should be declared before use at the top of the function.
+          </p>
+          <h4 id="js-4.4">4.4 Function Declarations</h4>
+          <p>
+            All functions should be declared before they are used.
+            <blockquote>
+              <pre>
+                function outer(c, d)
+                {
+                  var e = c * d;
+
+                  function inner(a, b)
+                  {
+                    return (e * a) + b;
+                  }
+
+                  return inner(0, 1);
+                }
+              </pre>
+            </blockquote>
+          </p>
+          <h4 id="js-4.5">4.5 Statements</h4>
+          <p>
+            Simple statements should end with a semicolon ;. Each statement should be on a separate line. Compound statements are enclosed in curcly braces {}.
+          </p>
+          <h4 id="js-4.5.1">4.5.1 For Statements</h4>
+          <p>
+            <blockquote>
+              <pre>
+                for (initialization; condition; update)
+                {
+                  statements
+                }
+
+                for (variable in object)
+                {
+                  if (object.hasOwnProperty(variable))
+                  {
+                    statements
+                  } 
+                }
+              </pre>
+            </blockquote>
+          </p>
+          <h4 id="js-4.5.2">4.5.2 While Statements</h4>
+          <p>
+            <blockquote>
+              <pre>
+                while (condition)
+                {
+                  statements
+                }
+              </pre>
+            </blockquote>
+          </p>
+          <h4 id="js-4.5.3">4.5.3 Do Statements</h4>
+          <p>
+            <blockquote>
+              <pre>
+                do
+                {
+                  statements
+                }
+                while (condition);
+              </pre>
+            </blockquote>    
+          </p>
+          <h4 id="js-4.5.4">4.5.4 Switch Statements</h4>
+          <p>
+            <blockquote>
+              <pre>
+                switch (expression)
+                {
+                  case expression:
+                    statements
+                  default:
+                    statements
+                }
+              </pre>
+            </blockquote>    
+          </p>
+          <h4 id="js-4.5.5">4.5.5 Try Statements</h4>
+          <p>
+            <blockquote>
+              <pre>
+                try 
+                {
+                  statements
+                } 
+                catch (variable)
+                {
+                  statements
+                }
+
+                try
+                {
+                  statements
+                }
+                catch (variable)
+                {
+                  statements
+                }
+                finally
+                {
+                  statements
+                }
+              </pre>
+            </blockquote>
+          </p>
+        </section>
+
+        <footer>
+          <span title="top of page">
+            <a href="#main-heading"><i class="fa fa-angle-double-up fa-5x"></i></a>
+          </span>
+        </footer>
+
+      </section>
+    </section>
+  </main>
+</body>
+  <!-- change the table of contents icon -->
+  <script src="scripts/code-style-guide.js"></script>
+</html>
