@@ -34,7 +34,8 @@ body
  {
   width: 100%;
   text-align: left;
-  font-size: 28px;
+  font-size: 20px;
+  text-transform: uppercase;
  }
 
  @media screen and (max-width: 900px) /* increase heading size in larger screens */
