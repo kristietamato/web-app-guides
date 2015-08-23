@@ -27,13 +27,13 @@ body
 {
   display: flex;
   flex-wrap: wrap;
+  background-color: #F1F2E4;
 }
 
 #main-heading /* edit the main h1 */
  {
   width: 100%;
-  text-align: center;
-  padding: 20px 20px 20px 160px;
+  text-align: left;
   font-size: 28px;
  }
 
@@ -47,21 +47,24 @@ body
 
  .table-of-contents /* create a fixed left menu */
  {
-    padding: 30px;
+    padding: 10px 40px 40px 40px;
     position: fixed;
     width: 26%;
     margin-right: 20px;
-    overflow-y: scroll;
+    overflow-y: auto;
     top: 0;
     bottom: 0;
     font-size: 90%;
+    background-color: #F1F2E4;
  }
 
    .info /* edit all the right content */
   {
-    padding: 10px 0 20px 20px;
+    padding: 40px;
     width: 60%;
     margin: auto;
+    border: dotted 1px;
+    background-color: #ffffff;
   }
 
 
