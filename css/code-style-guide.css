@@ -31,12 +31,12 @@ body
 }
 
 #main-heading /* edit the main h1 */
- {
+{
   width: 100%;
   text-align: left;
   font-size: 20px;
   text-transform: uppercase;
- }
+}
 
  @media screen and (max-width: 900px) /* increase heading size in larger screens */
  {
@@ -46,27 +46,28 @@ body
     }
  }
 
- .table-of-contents /* create a fixed left menu */
- {
-    padding: 10px 40px 40px 40px;
-    position: fixed;
-    width: 26%;
-    margin-right: 20px;
-    overflow-y: auto;
-    top: 0;
-    bottom: 0;
-    font-size: 90%;
-    background-color: #F1F2E4;
- }
+.table-of-contents /* create a fixed left menu */
+{
+  padding: 10px 40px 40px 40px;
+  position: fixed;
+  width: 26%;
+  margin-right: 20px;
+  overflow-y: auto;
+  top: 0;
+  bottom: 0;
+  font-size: 90%;
+  background-color: #F1F2E4;
+  z-index: 10;
+}
 
-   .info /* edit all the right content */
-  {
-    padding: 40px;
-    width: 60%;
-    margin: auto;
-    border: dotted 1px;
-    background-color: #ffffff;
-  }
+ .info /* edit all the right content */
+{
+  padding: 40px;
+  width: 60%;
+  margin: auto;
+  border: dotted 1px;
+  background-color: #ffffff;
+}
 
 
 .table-of-contents-main /* set the size of the left menu */
