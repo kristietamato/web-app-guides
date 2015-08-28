@@ -1,4 +1,4 @@
-var buttonIntro = document.getElementById('button-intro');
+var buttonGeneral = document.getElementById('button-general');
 var buttonHTML = document.getElementById('button-html');
 var buttonCSS = document.getElementById('button-css');
 var buttonJS = document.getElementById('button-js');
@@ -18,10 +18,11 @@ function openClose(div, icon)
   }
 }
 
-buttonIntro.onclick = function()
+var buttonGeneral = document.getElementById('button-general');
+buttonGeneral.onclick = function()
 {
-  var div= document.getElementById('open-close-intro');
-  var icon = 'toc-icon-intro';
+  var div = document.getElementById('open-close-general');
+  var icon = 'toc-icon-general';
   openClose(div, icon);
 }
 
