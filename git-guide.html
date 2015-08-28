@@ -53,7 +53,7 @@
           <h4 id="button-css"><a href="#css-3.0"><i id="toc-icon-css" class="fa fa-plus-square-o"></i> 3.0 Git on a Local Server</a></h4>
           <div id="open-close-css" style="display:none">
             <ul>
-              <li><a href="#local-server-3.1">3.1 The Local Protocol</a></li>
+              <li><a href="#css-3.1">3.1 The Local Protocol</a></li>
               <li><a href="#css-3.2">3.2 How to Configure User Access</a></li>
               <li><a href="#css-3.3">3.3 How to Get Git on the Local Server</a></li>
             </ul>
@@ -106,7 +106,7 @@
           <p>
             This guide was created based on Google Styling, and <a href="https://github.com/forio/front-end-code-standards#31-the-html-head-and-body-elements">Forio Front End</a> guides.
           </p>
-          <h4 id="intro-1.1">1.1 File Names</h4>
+          <h4 id="intro-1.1">1.1 What is Git</h4>
           <p>
             File names should be specific and descriptive. 
             Use only lowercase letters. 
@@ -114,118 +114,53 @@
             The legal characters are a-z, numbers, and - for separation.
             For example: image-name-2014-07-07.jpg
           </p>
-          <p>
-            Please do not use spaces or any of these special characters:
-          </p>
-          <pre>
-              \ / : * ? “ < > | [ ] & $
-          </pre>
-          <h4 id="intro-1.1.1">1.1.1 Dates</h4>
-          <p>
-            <i class="fa fa-thumbs-o-up" alt="Thumbs Up Icon"></i> Dates should be formatted as follows: file-name-year-month-day.extension
-          </p>
-          <h4 id="intro-1.1.2">1.1.2 Phone Numbers</h4>
-          <p>
-            <i class="fa fa-thumbs-o-up" alt="Thumbs Up Icon"></i> Phone numbers should be formatted in the following:<br />
-            (714) 111-5555
-          </p>
-
-          <h4 id="intro-1.2">1.2 Links</h4>
+          <h4 id="intro-1.2">1.2 Why Use Git</h4>
           <p>
             Provide a link to a description. Do not use the link itself to replace the description. <br />
             <i class="fa fa-thumbs-o-up" alt="Thumbs Up Icon"></i> <a href="">Code Style Guide</a><br />
             <i class="fa fa-thumbs-o-down" alt="Thumbs Down Icon"></i> <a href="">www.tamato.org/guides/code-style-guide.html</a>
           </p>
-          <h4 id="intro-1.3">1.3 Indentation</i></h4>
+          <h4 id="intro-1.3">1.3 Ways to Use Git</i></h4>
           <p>
             The indentation unit is 2 spaces. The use of tab is not recommended, because there is no standard for tabstops yet.
           </p>
-          <p>
-            Always indent child elements and content within elements like this:
-            <blockquote>
-              <pre>
-                <code>&lt;blockquote&gt;</code>
-                  <code>&lt;p&gt;</code> 
-                    Lorem ipsum dolor sit amet.
-                  <code>&lt;/p&gt;</code> 
-                <code>&lt;/blockquote&gt;</code>
-              </pre>
-            </blockquote>
-            Exceptions to this rule are <code>&lt;head&gt;</code> and <code>&lt;body&gt;</code> elements, <code>&lt;title&gt;</code>Title<code>&lt;/title&gt;</code>, <code>&lt;h#&gt;</code>header<code>&lt;/h#&gt;</code>, <code>&lt;li&gt;</code>list<code>&lt;/li&gt;</code>, and inline elements.
-          </p>
-          <h4 id="intro-1.4">1.4 Be Consistent</h4>
+          <h4 id="intro-1.4">1.4 How to Install Git</h4>
           <p>
             <i class="fa fa-exclamation" alt="Important Icon"></i> It is important to be consistent throughout your development. Try your best to follow this guideline. If there is anything not included here, you can look at the coding style of prior works to maintain consistency.
           </p>
-          <h4 id="intro-1.5">1.5 Comments</h4>
+          <h4 id="intro-1.5">1.5 How to Set Up Git</h4>
+          <p>
+            <i class="fa fa-exclamation" alt="Important Icon"></i> It is important to be consistent throughout your development. Try your best to follow this guideline. If there is anything not included here, you can look at the coding style of prior works to maintain consistency.
+          </p>
+          <h4 id="intro-1.6">1.6 Other Helpful Resources</h4>
           <p>
             Use line comments as much as needed. Make comments meaningful and clear. Comments should be up-to-date and error-free.
           </p>
-          <h4 id="intro-1.6">1.6 Using Git</h4>
-          <p>
-            Commits are made as often as possible. Commit messages start with the action or purpose of the commit: "Create the method to parse strings" No periods necessary. Be descriptive and informative.
-          </p>
-          <h4 id="intro-1.7">1.7 Search Engine Optimization (SEO)</h4>
-          <p>
-            <i class="fa fa-exclamation" alt="Important Icon"></i> SEO is perhaps one of the most important factors in a website. It enables users to get the specific information they need directly without having to browse around.
-          </p>
-          <p>
-            <i class="fa fa-thumbs-o-up" alt="Thumbs Up Icon"></i> Optimizing SEO:
-            <ul>
-              <li>Use only 1 &lt;h1&gt; tag for your heading per page</li>
-              <li>Use &lt;h2&gt; tags for subheadings</li>
-              <li>Use titles and headings that are descriptive (but not lengthy) and relevant to the content</li>
-              <li>Incorporate 3-6 repeated keywords in your content that users would type to find that page</li>
-              <li>Use descriptive (but not lengthy) links. <a href="#intro-1.2">How to Format Links</a></li>
-              <li>Use alts in images</li>
-            </ul>
-            For more information on SEO go to <a href="media/2015/documents/search-engine-optimization-starter-guide.pdf">SEO Starter Guide by Google</a>
-          <h4 id="intro-1.8">1.8 Project Organization</h4>
-          <p>
-            In progress.
-          </p>
 
-          <h3 id="html-2.0">2.0 HTML</h3>
-          <h4 id="html-2.1">2.1 The <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, and <code>&lt;body&gt;</code> elements</h4>
+          <h3 id="html-2.0">2.0 Basic Git</h3>
+          <h4 id="html-2.1">2.1 How to Create a Git Repository</h4>
           <p>
             Although it is good to have updated HTML5 formating, we will still include the <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, and <code>&lt;body&gt;</code> elements to ensure proper functioning in IE.
           </p>
-          <h4 id="html-2.2">2.2 Doctype and Meta Tags</h4>
+          <h4 id="html-2.2">2.2 How to Record Changes to the Repository</h4>
           <p>
             <i class="fa fa-exclamation" alt="Important Icon"></i> Include the <code>&lt;!doctype html&gt;</code>, <code>&lt;html lang="en"&gt;</code>, and <code>&lt;meta charset="utf-8"&gt;</code> in the beginning of every HTML document.
           </p>
           <p>
             <i class="fa fa-exclamation" alt="Important Icon"></i> Also include <code>&lt;meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"&gt;</code>, and <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</code>. The first one allows use of the latest rendering engine for IE8 and IE9 to enable the best possible browser experience. The second meta enables responsiveness to work properly in some types of mobile devices.
           </p>
-          <h4 id="html-2.3">2.3 HTML Formatting</h4>
+          <h4 id="html-2.3">2.3 How to View the Commit History</h4>
           <p>
             Use a new line for every block, list, or table element. Indent child elements.  <i class="fa fa-user" alt="User Preference Icon"></i> You may separate different code sections with empty new lines to improve readability.
           </p>
-          <h4 id="html-2.3.1">2.3.1 Quotes</h4>
-          <p>
-            Use double quotes "" around attribute values, for example:
-            <blockquote>
-              <pre>
-                &lt;a href="url"&gt;url&lt;/a&gt;
-              </pre>
-            </blockquote>
-          </p>
-          <h4 id="html-2.3.2">2.3.2 XHTML</h4>
-          <p> 
-            For proper XHTML, close all tags including br, li, hr tags, etc.
-          </p>
-          <h4 id="html-2.3.3">2.3.3 Trailing Whitespace</h4>
-          <p>
-            <i class="fa fa-user" alt="User Preference Icon"></i> Remove trailing white spaces.
-          </p>
-          <h4 id="html-2.4">2.4 Include files</h4>
+          <h4 id="html-2.4">2.4 How to Create Tags</h4>
           <p>
             Use include files for CSS and other non-scripts in the <code>&lt;header&gt;</code> region and place scripts before the <code>&lt;/html&gt;</code>. Try to minimize inline CSS/Javascript in HTML.
           </p>
           <p>
             Organize include files in appropriately labeled folders e.g. "css" for css files and "scripts" for JavaScript and jQuery files.
           </p>
-          <h4 id="html-2.5">2.5 Naming HTML Classes and IDs</h4>
+          <h4 id="html-2.5">2.5 How to Undo a Change</h4>
           <p>
             When naming classes and IDs, keep in mind readability of your code. You want your code to be a story that a reader can efficiently read through. This decreases the comments you would have to write. 
           </p>
@@ -238,9 +173,9 @@
           <p>
             Classes are used for several sections of content whereas IDs are more specific and unique to a content.  <i class="fa fa-exclamation" alt="Important Icon"></i> Classes are used more than once, but an ID should be used only once.
           </p>
+          <h4 id="html-2.6">2.6 How to Work With Remotes</h4>
           
-          <h3 id="css-3.0">3.0 CSS</h3>
-          <h4 id="css-3.1">3.1 Shorthand Coding</h4>
+          <h3 id="css-3.0">3.0 Git on a Local Server</h3>       
           <p>
             Use shorthand coding where possible. For example:
             <blockquote>
@@ -262,15 +197,15 @@
               </pre>
             </blockquote>
           </p>
-          <h4 id="css-3.2">3.2 Units</h4>
+          <h4 id="css-3.1">3.1 The Local Protocol</h4>
           <p>
             <i class="fa fa-exclamation" alt="Important Icon"></i> Use "px" for all values if possible. Avoid using units after 0 values unless you have to.
           </p>
-          <h4 id="css-3.3">3.3 Naming CSS Classes and IDs</h4>
+          <h4 id="css-3.2">3.2 How to Configure User Access</h4>
           <p>
             Naming in CSS is the same as HTML. They should all be lowercase and separated by a hyphen - .
           </p>
-          <h4 id="css-3.4">3.4 Order</h4>
+          <h4 id="css-3.3">3.3 How to Get Git on the Local Server</h4>
           <p>
             <i class="fa fa-user" alt="User Preference Icon"></i> Alphabetize declarations so that code is easy to read and maintain:
             <blockquote>
@@ -286,77 +221,16 @@
               </pre>
             </blockquote>
           </p>
-          <h4 id="css-3.5">3.5 url Values</h4>
-          <p>
-            <i class="fa fa-user" alt="User Preference Icon"></i> Do not include quotations in url() elements.
-          </p>
-          <h4 id="css-3.6">3.6 Block Content Indentation</h4>
-          <p>
-            Indent all block content:
-            <blockquote>
-              <pre>
-                @mediascreen, projection
-                {
-                  html
-                  {
-                    background: #fff;
-                    color: #444;
-                  }
-                }
-              </pre>
-            </blockquote>
-          </p>
-          <h4 id="css-3.7">3.7 Spacing</h4>
-          <p>
-            <i class="fa fa-user" alt="User Preference Icon"></i> Use a space after a property name's colon:
-            <blockquote>
-              <pre>
-                /* Not recommended */
-                h3
-                {
-                  font-weight:bold;
-                }
 
-                /* Recommended */
-                h3
-                {
-                  font-weight: bold;
-                }
-              </pre>
-            </blockquote>
-          </p>
-          <h4 id="css-3.8">3.8 Selector, Declaration, and Rule Separation</h4>
-          <p>
-            Start a new line for each selector, declarion, and rule:
-            <blockquote>
-              <pre>
-                /* Not recommended */
-                a:focus, a:active
-                {
-                  position: relative; top: 1px;
-                }
-
-                /* Recommended */
-                h1,
-                h2,
-                h3
-                {
-                  font-weight: normal;
-                  line-height: 1.2;
-                }
-              </pre>
-            </blockquote>
-          </p>
-
-          <h3 id="js-4.0">4.0 JavaScript</h3>
+          <h3 id="js-4.0">4.0 Git in SourceTree</h3>
             <p>
               Scripts should be externally linked. All scripts are placed at the end just before the &lt;/html&gt; tag.
             </p>
-          <h4 id="js-4.1">4.1 String Quotes</h4>
+          <h4 id="js-4.1">4.1 How to Add Repositories</h4>
           <p>
             Use single quotes ' ' instead of double quotes for strings to avoid confusion when including HTML elements.
           </p>
-          <h4 id="js-4.2">4.2 Naming in JavaScript</h4>
+          <h4 id="js-4.2">4.2 How to Use the UI Commands</h4>
           <p>
             <i class="fa fa-exclamation" alt="Important Icon"></i> Use:
             <ul>
@@ -370,11 +244,11 @@
           <p>
             Do not use const for constants.
           </P>
-          <h4 id="js-4.3">4.3 Variable Declarations</h4>
+          <h4 id="js-4.3">4.3 How to Remove a Commit</h4>
           <p>
             Generally, variables should be declared before use at the top of the function.
           </p>
-          <h4 id="js-4.4">4.4 Function Declarations</h4>
+          <h4 id="js-4.4">4.4 How the Code Comparison Works</h4>
           <p>
             All functions should be declared before they are used.
             <blockquote>
@@ -389,94 +263,6 @@
                   }
 
                   return inner(0, 1);
-                }
-              </pre>
-            </blockquote>
-          </p>
-          <h4 id="js-4.5">4.5 Statements</h4>
-          <p>
-            Simple statements should end with a semicolon ;. Each statement should be on a separate line. Compound statements are enclosed in curcly braces {}.
-          </p>
-          <h4 id="js-4.5.1">4.5.1 For Statements</h4>
-          <p>
-            <blockquote>
-              <pre>
-                for (initialization; condition; update)
-                {
-                  statements
-                }
-
-                for (variable in object)
-                {
-                  if (object.hasOwnProperty(variable))
-                  {
-                    statements
-                  } 
-                }
-              </pre>
-            </blockquote>
-          </p>
-          <h4 id="js-4.5.2">4.5.2 While Statements</h4>
-          <p>
-            <blockquote>
-              <pre>
-                while (condition)
-                {
-                  statements
-                }
-              </pre>
-            </blockquote>
-          </p>
-          <h4 id="js-4.5.3">4.5.3 Do Statements</h4>
-          <p>
-            <blockquote>
-              <pre>
-                do
-                {
-                  statements
-                }
-                while (condition);
-              </pre>
-            </blockquote>    
-          </p>
-          <h4 id="js-4.5.4">4.5.4 Switch Statements</h4>
-          <p>
-            <blockquote>
-              <pre>
-                switch (expression)
-                {
-                  case expression:
-                    statements
-                  default:
-                    statements
-                }
-              </pre>
-            </blockquote>    
-          </p>
-          <h4 id="js-4.5.5">4.5.5 Try Statements</h4>
-          <p>
-            <blockquote>
-              <pre>
-                try 
-                {
-                  statements
-                } 
-                catch (variable)
-                {
-                  statements
-                }
-
-                try
-                {
-                  statements
-                }
-                catch (variable)
-                {
-                  statements
-                }
-                finally
-                {
-                  statements
                 }
               </pre>
             </blockquote>
