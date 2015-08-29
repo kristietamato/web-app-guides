@@ -11,7 +11,7 @@ html
 body
 {
   color: #424242;
-  font: 14px Georgia, "Times New Roman", Times, serif;
+  font: 16px Georgia, "Times New Roman", Times, serif;
   line-height: 20px;
 }
 
@@ -34,17 +34,9 @@ body
 {
   width: 100%;
   text-align: left;
-  font-size: 20px;
+  font-size: 26px;
   text-transform: uppercase;
 }
-
- @media screen and (max-width: 900px) /* increase heading size in larger screens */
- {
-    #main-heading
-    {
-      font-size: 20px;
-    }
- }
 
 .table-of-contents /* create a fixed left menu */
 {
@@ -180,7 +172,7 @@ table
   border-collapse: 
   collapse;
   border-spacing: 0; 
-  font-size: 12px;
+  font-size: 14px;
   text-align: center;
 }
 
